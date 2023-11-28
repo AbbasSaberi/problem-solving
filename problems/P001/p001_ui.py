@@ -1,32 +1,16 @@
-from nicegui import ui
-from P001.p001 import even_odd
+from nicegui import *
+import P001
 
-class Options:
-    def __init__(self):
-        self.visible = False 
-        self.first = True
+Number_Input = ui.input('Text input')
 
-options = Options()
+ui.button('OK', on_click=lambda: Clik())
 
-def show_ui(visible):
-    options.visible = visible
-    if options.first:
-        options.first = False
-        root = create_ui()
-    
-def create_ui():
-    with ui.column().bind_visibility_from(options, 'visible') as root:
-        numberInput = ui.input('Number')
-        ui.button('Check Number', on_click=lambda: check_number())
-        output = ui.label()
+ui.run()
 
-    def check_number():
-        number = int(numberInput.value)
-        result = even_odd(number)
-        output.text = result
+def Clik():
+    number = int(Number_Input.value)
 
-    return root
+    result = P001.even_odd(number)
 
-if __name__ in {"__main__", "__mp_main__"}:
-    show_ui(True)
-    ui.run()
+    ui.notify(result)
+    ui.label(result)

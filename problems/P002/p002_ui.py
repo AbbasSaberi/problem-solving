@@ -1,46 +1,18 @@
 from nicegui import ui
-from P002.p002 import c , d , e , f
+import P002
 
-class Options:
-    def __init__(self):
-        self.visible = False 
-        self.first = True
+Number_Input1 = ui.input('Text input 1')
+Number_Input2 = ui.input('Text input 2')
 
-options = Options()
+ui.button('OK' , on_click=lambda: Clik())
 
-def show_ui(visible):
-    options.visible = visible
-    if options.first:
-        options.first = False
-        create_ui()
-    
-def create_ui():
-    with ui.column().bind_visibility_from(options, 'visible') as root:
-        numberInput1 = ui.input('Number 1')
-        numberInput2 = ui.input('Number 2')
-        with ui.row():
-            ui.button('+', on_click=lambda y: calculate(y))
-            ui.button('-', on_click=lambda y: calculate(y))
-            ui.button('/', on_click=lambda y: calculate(y))
-            ui.button('*', on_click=lambda y: calculate(y))
-        output = ui.label()
+ui.run()
 
-    def calculate(x):
-        operation = x.sender.text
-        number1 = int(numberInput1.value)
-        number2 = int(numberInput2.value)
+def Clik():
+    number_1 = int(Number_Input1.value)
+    number_2 = int(Number_Input2.value)
 
-        if operation == '+':
-            result = c(number1, number2)
-        elif operation == '-':
-            result = d(number1, number2)
-        elif operation == '/':
-            result = int(f(number1, number2))
-        elif operation == '*':
-            result = e(number1, number2)
+    result = P002.function(number_1 , number_2)
 
-        output.text = result
-
-if __name__ in {"__main__", "__mp_main__"}:
-    show_ui(True)
-    ui.run()
+    p = ui.notify(str(result))
+    ui.label(str(result))
