@@ -1,4 +1,4 @@
-from P001 import *
+from p001 import *
 
 def test1():
     assert even_odd(38) == '38 is even'
