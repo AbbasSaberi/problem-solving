@@ -7,5 +7,6 @@ __pycache__
 >>>>>>> a4ac4969328338da8aee5dffd07caad7366e3659
 =======
 .vscode
-__pycache__
+**/__pycache__/
+.DS_Store
 >>>>>>> a4ac4969328338da8aee5dffd07caad7366e3659
