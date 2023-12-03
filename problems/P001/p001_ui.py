@@ -1,5 +1,5 @@
 from nicegui import ui
-from P001.p001 import even_odd
+from p001_solution import even_odd
 
 class Options:
     def __init__(self):

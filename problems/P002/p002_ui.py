@@ -1,5 +1,5 @@
 from nicegui import ui
-from P002.p002 import c , d , e , f
+from p002_solution import c , d , e , f
 
 class Options:
     def __init__(self):

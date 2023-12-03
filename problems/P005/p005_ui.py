@@ -1,5 +1,5 @@
 from nicegui import ui
-from P005 import P005
+from p005_solution import P005
 
 class Options:
     def __init__(self):
@@ -20,7 +20,8 @@ def create_ui():
         numberInput2 = ui.input('operator')
         numberInput3 = ui.input('Number 2')
         with ui.row():
-            ui.button()
+            ui.button('Check Number', on_click=lambda: calculate())
+
         output = ui.label()
 
     def calculate():

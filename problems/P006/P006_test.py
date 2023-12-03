@@ -1,4 +1,4 @@
-from P006 import *
+from p006_solution import *
 
 def test_beginning():
     assert P006(78257984) == 3062156069001120

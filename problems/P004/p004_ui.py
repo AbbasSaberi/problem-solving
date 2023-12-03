@@ -1,5 +1,5 @@
 from nicegui import ui
-from P004.p004 import written_number
+from p004_solution import written_number
 
 class Options:
     def __init__(self):

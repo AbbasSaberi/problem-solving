@@ -1,4 +1,4 @@
-from p003 import *
+from p003_solution import *
 
 def test1():
     assert Year(1393 , 1400) == 2555

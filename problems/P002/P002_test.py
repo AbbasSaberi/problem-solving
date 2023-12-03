@@ -1,4 +1,4 @@
-from p002 import *
+from p002_solution import *
 
 def test1():
     assert function(10 , 5) == (15, 5, 50, 2)

@@ -1,5 +1,5 @@
 from nicegui import ui
-from P003.p003 import Year
+from p003_solution import Year
 
 class Options:
     def __init__(self):
