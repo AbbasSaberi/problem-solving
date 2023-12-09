@@ -1,4 +1,4 @@
-from P018 import *
+from p018_solution import *
 
 def test():
     assert P018(20) == [(3, 5),

@@ -1,4 +1,4 @@
-from P034 import *
+from p034_solution import *
 
 def test():
     assert P034(16728391) == [167,

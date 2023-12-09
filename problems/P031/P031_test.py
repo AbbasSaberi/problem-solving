@@ -1,4 +1,4 @@
-from P031 import *
+from p031_solution import *
 
 def test_1():
     assert P031(10) == [(3, 7),

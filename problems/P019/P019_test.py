@@ -1,4 +1,4 @@
-from P019 import *
+from p019_solution import *
 
 def test1():
     assert P019(3) == [[1],

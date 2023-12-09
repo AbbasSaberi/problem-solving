@@ -1,4 +1,4 @@
-from P020 import *
+from p020_solution import *
 
 def test_begininning():
     assert P020(1) == "1 is one"

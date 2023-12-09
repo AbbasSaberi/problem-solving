@@ -1,4 +1,4 @@
-from P015 import *
+from p015_solution import *
 
 def test1():
     a = 5

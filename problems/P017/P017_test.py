@@ -1,4 +1,4 @@
-from P017 import *
+from p017_solution import *
 
 def test_beginning():
     assert P017(5) == ["00000",

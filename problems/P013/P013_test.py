@@ -1,4 +1,4 @@
-from P013 import *
+from p013_solution import *
 
 def test_beginning():
     assert P013(4) == [2 , 2]

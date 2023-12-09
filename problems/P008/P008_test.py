@@ -1,4 +1,4 @@
-from P008  import *
+from p008_solution import *
 
 def test_beginning():
     assert P008(5) == 120

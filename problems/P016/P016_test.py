@@ -1,4 +1,4 @@
-from P016 import *
+from p016_solution import *
 
 def test_beginning():
     assert slohsen(4) == ["@@@@",

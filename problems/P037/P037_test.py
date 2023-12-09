@@ -1,4 +1,4 @@
-from P037 import *
+from p037_solution import *
 
 def test1():
 

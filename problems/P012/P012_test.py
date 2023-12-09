@@ -1,4 +1,4 @@
-from P012 import *
+from p012_solution import *
 
 def test_beginning():
     assert prime_number(4) == 7   

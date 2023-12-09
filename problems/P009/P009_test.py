@@ -1,4 +1,4 @@
-from P009 import *
+from p009_solution import *
 
 def test_beginning():
     assert is_preme(20) == [2, 3, 5, 7, 11, 13, 17, 19]

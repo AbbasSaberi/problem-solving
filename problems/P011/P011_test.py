@@ -1,4 +1,4 @@
-from P011 import *
+from p011_solution import *
 
 def test_beginning():
     assert figunahe(25) == [1, 1, 2, 3, 5, 8, 13, 21]

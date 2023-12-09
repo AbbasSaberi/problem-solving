@@ -1,4 +1,4 @@
-from P014 import *
+from p014_solution import *
 
 def test1():
     a = 2

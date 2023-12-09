@@ -1,4 +1,4 @@
-from P047 import *
+from p047_solution import *
 
 def test_1():
     assert P047(10) == 4
