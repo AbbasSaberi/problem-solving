@@ -3,9 +3,9 @@ def P007(list):
     for x in range(1 , list + 1):
         if x % 5 ==0:
           m.append(x)
-    return m  
+    return m
 
 if __name__ == '__main__':
-    a = int(input())
+    a = int(input('int : '))
     answer = P007(a)
     print(answer)

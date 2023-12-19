@@ -9,6 +9,6 @@ def is_preme(number):
             m.append(d)
     return m
 if __name__ == '__main__':
-    a = int(input())
+    a = int(input('int : '))
     answer = is_preme(a)
     print(answer)
