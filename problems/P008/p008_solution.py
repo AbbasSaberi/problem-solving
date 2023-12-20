@@ -4,6 +4,6 @@ def P008(number):
     return number
 
 if __name__ == '__main__':
-    a = int(input())
+    a = int(input('number : '))
     answer = P008(a)
     print(answer)
