@@ -12,6 +12,7 @@ from P005 import p005_ui
 from P006 import p006_ui
 from P007 import p007_ui
 from P008 import p008_ui
+from P009 import p009_ui
 
 class Problem:
     def __init__(self):
@@ -31,6 +32,7 @@ def show_problem(problem_number):
     p006_ui.show_ui(problem_number == 6)
     p007_ui.show_ui(problem_number == 7)
     p008_ui.show_ui(problem_number == 8)
+    p009_ui.show_ui(problem_number == 9)
 
     
 problem = Problem()
