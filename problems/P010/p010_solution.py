@@ -15,6 +15,6 @@ def primorial(number):
     return beat(m)
 
 if __name__ == '__main__':
-    a = int(input())
+    a = int(input('number : '))
     answer = primorial(a)
     print(answer)
