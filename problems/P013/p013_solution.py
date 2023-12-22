@@ -17,6 +17,6 @@ def P013(number):
             output.append(shirpharhad)
     return output
 if __name__ == '__main__':
-    a = int(input())
+    a = int(input('number : '))
     answer = P013(a)
     print(answer)
