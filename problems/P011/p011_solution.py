@@ -14,6 +14,6 @@ def figunahe(number):
     return m
 
 if __name__ == '__main__':
-    input = int(input())
+    input = int(input('number : '))
     answer = figunahe(input)
     print(answer)
