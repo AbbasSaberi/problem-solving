@@ -23,9 +23,7 @@ def create_ui():
     def check_number():
         number = int(numberInput.value)
         result = slohsen(number)
-        for X in range(number , 1):
-            for x in list(result):
-                output.text = str(x) * X
+        output.text = ''.join(result)
 
     return root
 
