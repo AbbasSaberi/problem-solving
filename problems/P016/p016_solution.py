@@ -1,4 +1,4 @@
-def slohsen(number):
+def solution(number):
     m = []
     d = '@'
     for b in range(number , 0 , -1):
@@ -6,6 +6,6 @@ def slohsen(number):
     return m
 if __name__ == '__main__':
     a = int(input("Enter the number: "))
-    answer = slohsen(a)
+    answer = solution(a)
     for b in answer:
         print(b)

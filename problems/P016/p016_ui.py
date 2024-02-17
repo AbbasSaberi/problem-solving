@@ -1,5 +1,5 @@
 from nicegui import ui
-from p016_solution import slohsen
+from p016_solution import solution
 
 class Options:
     def __init__(self):
@@ -22,8 +22,11 @@ def create_ui():
 
     def check_number():
         number = int(numberInput.value)
-        result = slohsen(number)
-        output.text = ''.join(result)
+        textatea = ui.textarea(label='Result')
+        textatea.value = '\n'.join(number)
+        textatea.enable = False
+        result = solution(number)
+        output.text = result
 
     return root
 
