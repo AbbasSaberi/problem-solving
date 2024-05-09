@@ -26,7 +26,7 @@ def create_ui():
         textatea.value = '\n'.join(number)
         textatea.enable = False
         result = solution(number)
-        output.text = result
+        textatea.value = result
 
     return root
 
