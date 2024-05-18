@@ -1,62 +1,84 @@
-from graphics import *
+import turtle
+SHAPE = input('Shape : ')
 
-def main():
-    win = GraphWin("My graphics.py",600, 600)
+if SHAPE == 'Square':
 
-    INPUT = input('The name of the figure : ')
+    a = int(input('point : '))
+    turtle.penup()
+    turtle.right(90)
+    turtle.fd(a / 2)
+    turtle.right(90)
+    turtle.fd(a / 2)
+    turtle.pendown()
 
-    if INPUT == 'Square':
+    for x in range(4):
+        turtle.right(90)
+        turtle.fd(a)
 
-        point = int(input('Point : '))
+if SHAPE == 'Rectangle':
 
-        p1 = 300 - point
-        p2 = 300 + point
+    a = input('point : ').split(' ')
+    turtle.penup()
+    turtle.right(90)
+    turtle.fd(int(a[0]) / 2)
+    turtle.right(90)
+    turtle.fd(int(a[1]) / 2)
+    turtle.pendown()
 
+    for x in range(2):
+        turtle.right(90)
+        turtle.fd(int(a[0]))
+        turtle.right(90)
+        turtle.fd(int(a[1]))
 
-        Shape = Rectangle(Point(p1,p1), Point(p2,p2))
-        Shape.draw(win)
+if SHAPE == 'Triangle':
+
+    a = int(input('point : '))
+    turtle.penup()
+    turtle.right(90)
+    turtle.fd(a / 2)
+    turtle.right(90)
+    turtle.fd(a / 2)
+    turtle.pendown()
+
+    for x in range(3):
+        turtle.right(180 - 60)
+        turtle.fd(a)
+
+if SHAPE == 'Circle':
     
-    if INPUT == 'Rectangle':
+    a = int(input('Radius : '))
+    turtle.penup()
+    turtle.right(90)
+    turtle.fd(a)
+    turtle.left(90)
+    turtle.pendown()
 
-        point = input('Point : ').split(' ')
+    turtle.circle(a)
 
-        p1 = int(point[0])
-        p2 = int(point[1])
+if SHAPE == 'Pentagon':
 
-        Shape = Rectangle(Point(300 -p1,300 -p2), Point(300 + p1,300 + p2))
-        Shape.draw(win)
+    a = int(input('point : '))
+    turtle.penup()
+    turtle.right(90)
+    turtle.fd(a)
+    turtle.right(90)
+    turtle.fd(a / 2)
+    turtle.pendown()
 
-    if INPUT == 'Circle':
+    for x in range(5):
 
-        point = int(input('Radius : '))
+        turtle.left(108 - 180)
+        turtle.fd(a)
 
-        p = point * 2
+if SHAPE == 'Oval':
 
-        Shape = Circle(Point(300,300), p)
-        Shape.draw(win)
-    
-    if INPUT == 'Triangle':
-
-        point = int(input('point : '))
-
-        p1 = 300 - point
-        p2 = 300 + point
-        p3 = 300 - point
-
-        Shape = Polygon(Point(300,p1),Point(p2,p2),Point(p3,p2))
-        Shape.draw(win)
-    
-    if INPUT == 'Oval':
-
-        point = input('Point : ').split(' ')
-
-        p1 = int(point[0])
-        p2 = int(point[1])
-
-        Shape = Oval(Point(300 -p1,300 -p2), Point(300 + p1,300 + p2))
-        Shape.draw(win)
-
-    win.getMouse()
-    win.close()
-
-main()
+    a = input('Radius : ').split(' ')
+    turtle.penup()
+    turtle.left(180)
+    turtle.fd(int(a[0]))
+    turtle.right(45 - 180)
+    turtle.pendown()
+    for x in range(2):
+        turtle.circle(int(a[0]),90)
+        turtle.circle(int(a[1]),90)
