@@ -1724,13 +1724,17 @@
 #     win = GraphWin()
 
 #__----------------------__
-from graphics import *
+using UnityEngine;
 
-def main():
-    
-    win = GraphWin("My baze(graphics).py", 800, 800)
+public class Bounce : MonoBehaviour
+{
+    public float bounceForce = 5f;
 
-    point1 = input('Point1 : ').split(',')
-    point2 = input('Point2 : ').split(',')
+    private void OnCollisionEnter(Collision collision)
+    {
+        Rigidbody rb = GetComponent<Rigidbody>();
 
-main()
+        // Apply an upward force
+        rb.AddForce(Vector3.up * bounceForce, ForceMode.Impulse);
+    }
+}
